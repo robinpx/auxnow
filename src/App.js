@@ -87,7 +87,7 @@ class App extends React.Component {
         window.location.assign('./error?response=' + status);
       }
     } catch(error) {
-      window.location.assign('./error?response=');
+      // window.location.assign('/');
     } 
   }
 
