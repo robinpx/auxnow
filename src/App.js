@@ -72,7 +72,8 @@ class App extends React.Component {
       }
       return '';
     } catch(err) {
-      this.clearCookie('refresh');
+      // this.clearCookie('refresh');
+      console.log(err);
     }
   }
 
