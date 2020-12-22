@@ -274,6 +274,10 @@ input {
   animation:colorful 3s infinite;
 }
 
+.credits {
+  font-size:0.6em;
+}
+
 /* FORM */
 
 /* SECTION 0 */
