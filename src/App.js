@@ -72,7 +72,7 @@ class App extends React.Component {
       }
       return '';
     } catch(err) {
-      this.clearCookie('refresh');
+      // this.clearCookie('refresh');
       console.log(err);
     }
   }
@@ -88,7 +88,8 @@ class App extends React.Component {
         window.location.assign('./error?response=' + status);
       }
     } catch(err) {
-      window.location.assign('/');
+      // window.location.assign('./');
+      console.log(err);
     } 
   }
 
