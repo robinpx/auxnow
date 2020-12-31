@@ -5,7 +5,7 @@ import { withStyles } from '@material-ui/core/styles';
 const CustomSlider = withStyles({
     root: {
       width: '100%',
-      height: '1.75em',
+      height: '1em',
       padding: 0
     },
     thumb: {
