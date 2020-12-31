@@ -17,11 +17,11 @@ const CustomSlider = withStyles({
     },
     active: {},
     track: {
-      height: '1.75em',
+      height: '1em',
       borderRadius: 100,
     },
     rail: {
-      height: '1.75em',
+      height: '1em',
       borderRadius: 100,
     },
   })(Slider);
