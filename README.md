@@ -42,7 +42,7 @@ node server.js
 ```
 
 ## Demo
-![example1](https://raw.githubusercontent.com/robinpx/robinpx.github.io/main/public/images/code/auxnow.gif?token=AF4URYFLRG2PE7OE3GIG4Z275PI7U)
+![example1](https://raw.githubusercontent.com/robinpx/robinpx.github.io/main/public/images/code/auxnow.gif?token=AF4URYANNQHFC24LJ3YQ243AADJ6I)
 
 
 ## Acknowledgements
