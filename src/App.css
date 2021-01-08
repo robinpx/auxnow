@@ -50,7 +50,7 @@ h3 {
 }
 
 header {
-  z-index:999;
+  z-index:99999;
   font-size:0.7em;
   width:100%;
   padding:0.3em 1.5em 0.3em 1.5em;
@@ -166,7 +166,6 @@ footer a {
 
 #login {
   text-align:center;
-  height:auto;
   height:100vh;
   z-index:99;
   width:100%;
@@ -240,15 +239,16 @@ input {
 }
 
 #about {
+  z-index:99999;
   position:fixed;
-  top:2.5em;
-  left:0;
+  left:0; 
+  top:0;
   background:#111;
   color:white;
   text-align:left;
   width:100%;
   padding:0.3em 1.5em;
-  z-index:999999;
+  padding-top:2.5em;
   height:100vh;
 }
 
@@ -264,13 +264,16 @@ input {
 }
 
 .show-about {
-  display:block;
+  display:flex;
+  align-items:center;
+  justify-content:center;
 }
 
 #close-button {
   font-family:"Archivo", sans-serif;
   cursor:pointer;
   color:#1DB954;
+  display:inline-block;
   animation:colorful 3s infinite;
 }
 
@@ -476,7 +479,7 @@ input {
 }
 
 .genre {
-  font-size:1.6em;
+  font-size:1.5em;
   cursor:pointer;
   display:inline-block;
 }
@@ -565,8 +568,8 @@ input {
 #sliders .slider {
   text-align:right;
   right:0;
-  width:90%;
-  margin-left:10%;
+  width:70%;
+  margin-left:30%;
 }
 
 #section4 #totalSongs {
@@ -625,17 +628,34 @@ input {
 }
 
 @media only screen and (max-width: 760px) {
-  #section2 #options {
-    width:calc(50% - 1em);
-    margin-right:1em;
+  .desc, input {
+    font-size:1.5em;
   }
 
   section {
+    font-size:calc(12px + 1vw);
     overflow-y:scroll!important;
   }
 
   .section-wrap {
     width:95%!important;
+  }
+
+  #about-wrap, .credits {
+    font-size:1em;
+  }
+
+  #about {
+    padding:0;
+  }
+
+  #section2 #options {
+    width:calc(50% - 2em);
+    margin-right:2em;
+  }
+
+  .top-button, .bottom-button {
+    font-size:0.8em;
   }
 
   h2 {
@@ -661,6 +681,10 @@ input {
     height:5em;
   }
 
+  #artists {
+    padding-bottom:5em;
+  }
+
   #left-block {
     margin-top:10em;
     height:40vh;
@@ -677,16 +701,18 @@ input {
   }
 
   #section4 .slider {
-    text-align:left;
-    right:0;
-    width:70%;
-    margin-left:calc(30% + 3em);
+    margin-left:0;
+    width:100%;
   }
 
   #section4 .slider-name {
-    position:absolute;
-    left:1em;
-    width:30%;
+    position:relative;
+    margin-left:-2em;
+    width:100%;
+  }
+
+  #section4 .section-wrap {
+    margin:9em 0em;
   }
 
 }

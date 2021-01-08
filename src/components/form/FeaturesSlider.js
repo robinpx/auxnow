@@ -49,7 +49,7 @@ handleChange(event, newValue) {
             <div className={'slider'} id={'slider-'+name}>
                 <div className='slider-name' id={'range-slider-'+name}>{name}</div>
                 <CustomSlider
-                    style={{ maxWidth: '80%', filter:'hue-rotate(80deg)' }}
+                    style={{ filter:'hue-rotate(80deg)' }}
                     value={this.state.value}
                     onChange={this.handleChange}
                     aria-labelledby={'range-slider-'+name}
